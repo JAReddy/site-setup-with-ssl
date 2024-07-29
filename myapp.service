@@ -1,0 +1,10 @@
+[Unit]
+Description=My Java application
+After=network.target
+
+[Service]
+ExecStart=java -jar /home/ubuntu//site-setup-with-ssl-JAReddy/target/SimpleWebApp-0.0.1-SNAPSHOT.jar &
+SuccessExitStatus=110
+
+[Install]
+WantedBy=multi-user.target
